@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CashflowAI 🚀  
+AI-powered invoicing & WhatsApp payment follow-up system for small businesses.
 
-## Getting Started
+CashflowAI is a SaaS-style MVP that helps businesses:
+- Create invoices
+- Preview invoices
+- Send invoices via WhatsApp
+- Prepare for automated payment follow-ups
 
-First, run the development server:
+This project is currently in **UI-first MVP stage**, built with proper
+SaaS architecture and scalability in mind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Current Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🧾 Invoice Management (UI)
+- Invoice list page
+- Create invoice form
+- Invoice preview (print-friendly)
+- Invoice send flow (WhatsApp UI)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📲 WhatsApp Send (UI)
+- Editable WhatsApp message
+- Message templates (Polite / Friendly / Firm)
+- Live WhatsApp-style message preview
+- Ready for future WhatsApp API integration
 
-## Learn More
+### 📊 Dashboard
+- Sidebar navigation with routing
+- Topbar layout
+- SaaS-style dark UI
+- Stats cards (expected, pending, risk customers)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🧠 Product Vision
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Most small businesses don’t struggle with sales —  
+they struggle with **late payments and cashflow visibility**.
 
-## Deploy on Vercel
+CashflowAI aims to:
+- Reduce payment delays
+- Remove awkward manual follow-ups
+- Give clarity on expected cashflow
+- Automate reminders via WhatsApp
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🏗 Tech Stack
+
+- **Framework:** Next.js (App Router)
+- **Language:** JavaScript
+- **Styling:** Custom CSS (SaaS-style, no Tailwind dependency)
+- **Routing:** Next.js App Router
+- **State:** Static UI (backend planned)
+
+---
+
+## 📁 Project Structure
+
+```text
+app/
+├─ page.js                      # Marketing landing page
+├─ dashboard/
+│  ├─ page.js                   # Dashboard home
+│  ├─ invoices/
+│  │  ├─ page.js                # Invoice list
+│  │  ├─ create/page.js         # Create invoice form
+│  │  ├─ preview/page.js        # Invoice preview
+│  │  └─ send/page.js           # WhatsApp send UI
+├─ styles/
+│  ├─ marketing.css             # Landing page styles
+│  └─ app.css                   # Dashboard & app styles
+components/
+├─ Sidebar.js
+├─ Topbar.js
+└─ StatCard.js

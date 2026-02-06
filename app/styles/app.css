@@ -1,0 +1,236 @@
+/* ===== DASHBOARD ROOT ===== */
+.dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 260px;
+  background: #020617;
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 24px;
+  flex-shrink: 0;
+}
+
+.sidebar h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 32px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 12px 14px;
+  border-radius: 8px;
+  color: #94a3b8;
+  text-decoration: none;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.sidebar a.active,
+.sidebar a:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+}
+
+/* ===== MAIN AREA ===== */
+.dashboard-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== TOPBAR ===== */
+.topbar {
+  height: 64px;
+  background: rgba(2, 6, 23, 0.9);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.topbar span {
+  font-size: 14px;
+  color: #94a3b8;
+}
+
+/* ===== CONTENT ===== */
+.dashboard-content {
+  padding: 32px;
+}
+
+/* ===== STATS GRID ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+/* ===== STAT CARD ===== */
+.stat-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 24px;
+}
+
+.stat-card h4 {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 8px;
+}
+
+.stat-card p {
+  font-size: 28px;
+  font-weight: 600;
+}
+/* ===== FORM CARD ===== */
+.form-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  padding: 24px;
+  max-width: 900px;
+}
+
+/* ===== INPUTS ===== */
+.label {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 14px;
+}
+
+.input::placeholder {
+  color: #64748b;
+}
+
+.textarea {
+  width: 100%;
+  min-height: 90px;
+  padding: 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: white;
+  font-size: 14px;
+  resize: vertical;
+}
+
+/* ===== FORM ACTIONS ===== */
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.primary-btn {
+  background: #3b82f6;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #e5e7eb;
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 14px;
+  cursor: pointer;
+}
+/* ===== INVOICE PREVIEW ===== */
+.invoice-preview {
+  background: white;
+  color: #020617;
+  max-width: 800px;
+  border-radius: 14px;
+  padding: 32px;
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.invoice-header h3 {
+  font-size: 20px;
+}
+
+.invoice-body {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+}
+
+.invoice-body h2 {
+  font-size: 28px;
+}
+
+.invoice-notes {
+  margin-top: 20px;
+}
+
+.invoice-preview hr {
+  margin: 20px 0;
+  border: none;
+  border-top: 1px solid #e5e7eb;
+}
+/* ===== WHATSAPP SEND UI ===== */
+.whatsapp-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 24px;
+}
+
+.whatsapp-preview {
+  background: #e5ddd5;
+  border-radius: 14px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.whatsapp-header {
+  text-align: center;
+  font-size: 13px;
+  color: #475569;
+  margin-bottom: 12px;
+}
+
+.whatsapp-bubble {
+  background: #dcf8c6;
+  padding: 14px;
+  border-radius: 12px;
+  max-width: 90%;
+  font-size: 14px;
+  color: #020617;
+  line-height: 1.5;
+}
+
+.whatsapp-bubble .link {
+  color: #2563eb;
+  word-break: break-all;
+}
